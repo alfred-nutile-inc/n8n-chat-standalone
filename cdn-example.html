@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N8n Chat CDN Example</title>
+    <link rel="stylesheet" href="https://your-cdn.com/n8n-chat-standalone.css">
+</head>
+<body>
+    <div id="chat-container"></div>
+    
+    <script src="https://your-cdn.com/n8n-chat-cdn.js"></script>
+    <script>
+        // Initialize the chat (no import needed!)
+        N8nChat.createChat({
+            webhookUrl: "https://your-n8n-webhook-url.com/webhook/chat",
+            target: "#chat-container",
+            mode: "window",
+            showWelcomeScreen: true,
+            initialMessages: ["Hello! How can I help you today?"]
+        });
+    </script>
+</body>
+</html>
